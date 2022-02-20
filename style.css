@@ -1,0 +1,305 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+nav{
+    flex:1;
+    text-align: right;
+}
+nav ul {
+    /* display: inline-block; */
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+}
+nav ul li a{
+    text-decoration: none;
+    margin-right: 20px;
+    color: #555;
+}
+p{
+    color: #555;
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col{
+    flex-basis: 50%;
+    min-width: 300px;
+    
+}
+.col img{
+    max-width: 100%;
+    padding: 50px 0;
+}
+.col h1 {
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+.col a {
+    display: inline-block;
+    background-color: #ff523b;
+    color: white;
+    padding: 8px 30px;
+    margin:  30px 0;
+    border-radius: 30px;
+}
+.btn:hover{
+    background-color: #f53434;
+}
+.col a i {
+    color: white;
+}
+
+.header{
+    background: radial-gradient(#fff,#ffd6d6);
+}
+.header .row{
+    margin-top: 70px;
+}
+
+/* featues */
+.categories{
+    margin: 70px 0;
+}
+.col{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+    
+}
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+/* product */
+.product {
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition:transform 0.5s;
+}
+.product-img{
+    width: 300px;
+    height: 500px;
+}
+.product p {
+    font-size: 14px;
+
+}
+.product:hover{
+    transform: translateY(-5px);
+}
+
+.title{
+    width: 28%;
+    text-align: center;
+    margin: 0 auto 80px;
+    line-height: 60px;
+    color: #555;
+    border-bottom: 2px solid #f53434;
+}
+h4{
+    color: #555;
+    font-weight: normal;
+}
+.rating .fas {
+    color: #ff523b;
+}
+
+/* offer */
+.offer{
+    background: radial-gradient(#fff,#ffd6d6);
+    margin-top: 80px;
+    padding: 30px 0;
+}
+
+.offer-img{
+    padding: 50px;
+}
+small{
+    color: #555;
+}
+
+/* testimonial */
+.testimonial {
+    padding-top: 100px;
+}
+
+.testimonial .col {
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+.testimonial .col img {
+    width: 50px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+.testimonial .col:hover{
+    transform: translateY(-10px);
+}
+
+.fa-quote-left {
+    font-size: 34px;
+    color:#f53434;
+}
+.testimonial .col p {
+    font-size: 12px;
+    margin: 12 px 0;
+    color: #777;
+}
+.testimonial .col h3{
+    font-weight: 600;
+    color: #555;
+    font-size: 16px;
+}
+
+/* brands */
+.brands {
+    margin: 50px auto;
+}
+.brand{
+    width: 160px;
+}
+.brand img{
+    width: 100%;
+    cursor: pointer;
+    filter: grayscale(100%);
+}
+.brand img:hover{
+    filter: grayscale(0);
+}
+
+/* footer */
+.footer{
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+.footer p {
+    color: #8a8a8a;
+}
+.footer h3 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.footer .col {
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+.download {
+    flex-basis: 30%;
+}
+.purpose {
+    flex: 1;
+    text-align: center;
+}
+.purpose img {
+    width: 180px;
+    margin-bottom: 20px;
+}
+.links, .follow {
+    flex-basis: 12%;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.app-logo{
+    margin-top: 20px;
+}
+.app-logo img {
+    width: 120px;
+}
+.footer hr {
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+}
+.copyright {
+    text-align: center;
+}
+
+.menu-icon {
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+
+
+/* media query for menu */
+@media only screen and (max-width: 800px) {
+    nav ul {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background-color: #333;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a {
+        color: #fff;
+    }
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+/* media query for less than 600px screen size */
+
+@media only screen and (max-width: 600px){
+    .row{
+        text-align: center;
+    }
+    .col{
+        flex-basis: 100%;
+    }
+}
+
+
